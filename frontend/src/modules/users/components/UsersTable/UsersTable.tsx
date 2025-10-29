@@ -23,7 +23,7 @@ export const UsersTable = ({ data }: IUsersTableProps) => {
                 <tr key={lastName}>
                     <td>{firstName}</td>
                     <td>{lastName}</td>
-                    <RelativesCounter data={data} />
+                    <RelativesCounter data={data} lastName={lastName} />
                     <td>{company?.name}</td>
                     <td>{gender}</td>
                     <td>{new Date(birthTimestamp).toLocaleDateString()}</td>

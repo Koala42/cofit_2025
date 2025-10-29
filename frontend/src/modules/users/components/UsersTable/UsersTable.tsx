@@ -1,4 +1,3 @@
-import React from 'react';
 import type { User } from '../../../../types';
 import { useSortData } from '../../../../hooks';
 import { RelativesCounter } from '../RelativesCounter';

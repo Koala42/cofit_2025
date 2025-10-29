@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { UsersTable } from '../UsersTable/UsersTable';
 import type { User } from '../../../../types';
 import { getUsersList } from '../../../../api';

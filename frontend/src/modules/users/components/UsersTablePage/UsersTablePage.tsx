@@ -21,7 +21,7 @@ export const UsersTablePage = () => {
     }, [search, limit]);
 
     return (
-        <>
+        <div className='container'>
             <div style={{ display: 'flex', gap: 8 }}>
                 <input
                     type='email'
@@ -41,6 +41,6 @@ export const UsersTablePage = () => {
                 <button onClick={() => setLimit(100_000)}>Limit 100 000</button>
             </div>
             <UsersTable data={data} />
-        </>
+        </div>
     );
 };

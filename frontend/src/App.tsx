@@ -1,11 +1,12 @@
-import './App.css';
+import { Header } from './components/Header';
 import { UsersTablePage } from './modules/users/components/UsersTablePage';
 
 function App() {
     return (
-        <div>
+        <>
+            <Header />
             <UsersTablePage />
-        </div>
+        </>
     );
 }
 

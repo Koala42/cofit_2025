@@ -21,7 +21,9 @@ export class AppController {
   ): Promise<ResponseData<UserResponse>> {
     const headerBody = authorizationHeader.split('.')[1];
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const bodyPayload = JSON.parse(atob(headerBody));
+    const bodyPayload = JSON.parse(
+      Buffer.from(headerBody, 'base64').toString(),
+    );
 
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     if (!bodyPayload['admin']) {

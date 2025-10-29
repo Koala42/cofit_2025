@@ -13,8 +13,8 @@ export const Header = () => {
                     <img src='/koalaLogo.9762b7c2.svg' alt='' />
                     <img src='/koalaTextLogoWhite.f29e7997.svg' alt='' />
                 </a>
-                <a href='https://koala42.com/career' target="_empty" style={{ color: 'white' }}>
-                    Pracovní nabídky
+                <a href='https://koala42.com' target="_empty" style={{ color: 'white' }}>
+                    Web
                 </a>
             </div>
         </header>

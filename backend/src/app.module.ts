@@ -5,6 +5,7 @@ import { DbModule } from './db/db.module';
 import { ConfigModule } from '@nestjs/config';
 /* import { SeederModule } from './seeder/seeder.module'; */
 
+/* THIS FILE IS NOT PART OF THE CHALLENGE */
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),

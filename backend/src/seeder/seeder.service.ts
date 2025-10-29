@@ -5,6 +5,7 @@ import * as schema from './../db/schema';
 import { seed } from 'drizzle-seed';
 import { eq } from 'drizzle-orm';
 
+/* THIS FILE IS NOT PART OF THE CHALLENGE */
 @Injectable()
 export class SeederService {
   constructor(@Inject(DB_CONNECTION) private readonly db: DbConnection) {}
@@ -13,6 +14,7 @@ export class SeederService {
     await this.db.delete(schema.usersTable);
     await this.db.delete(schema.companyTable);
 
+    // When running locally, you can use lower seed counts to make it faster
     await seed(this.db, schema, { count: 26_000 }).refine(() => ({
       usersTable: {
         count: 25_000,

@@ -4,6 +4,7 @@ import { ConfigService } from '@nestjs/config';
 import { drizzle } from 'drizzle-orm/neon-serverless';
 import * as schema from './schema';
 
+/* THIS FILE IS NOT PART OF THE CHALLENGE */
 @Global()
 @Module({
   providers: [
